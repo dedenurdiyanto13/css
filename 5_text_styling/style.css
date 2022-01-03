@@ -1,0 +1,83 @@
+/* 
+# codepen.com : text editor online
+# colorpicker.com : referensi warna online
+
+# Text : 
+- color : memberi warna pada tulisan
+- text-align : mengatur format paragraf / teks
+- text-indent : mengatur indentasi pada paragraf / teks
+- text-decoration : mengatur dekorasi pada teks 
+- text-transform : mengubah jenis huruf menjadi huruf besar, kecil / kapital
+- letter spacing : mengatur spasi antar huruf
+- word sppacing : mengatur spasi antar kata
+
+# color :
+- nama warna : red
+- hexadecimal : #ff0000
+- rgb : rgb(255, 0, 0)
+
+# text-align :
+- left : rata kiri
+- right : rata kanan
+- center : rata tengah
+- justify : rata kanan kiri
+
+# text-indent : 
+- px
+- %
+
+# text-decoration :
+- none
+- underline : garis bawah text
+- overline : garis atas text
+- line-throught : garis coret text
+
+# text-transform :
+- none
+- lowercase : hello world
+- uppercase : HELLO WORLD
+- capitalize : Hello World
+
+# letter-spacing :
+- normal
+- px
+
+# word-spacing : 
+- normal
+- px
+
+*/
+
+h1 {
+  /* color: red; */
+  color: #ff0000;
+  /* color: rgb(255, 0, 0); */
+
+  /* text-align: left; */
+  /* text-align: right; */
+  text-align: center;
+  /* text-align: justify; */
+}
+
+p {
+  text-indent: 20px;
+  /* text-indent: 20%; */
+
+  /* text-transform: none; */
+  text-transform: lowercase;
+  /* text-transform: uppercase; */
+  /* text-transform: capitalize; */
+
+  /* letter-spacing: normal; */
+  letter-spacing: 5px;
+
+  /* word-spacing: normal; */
+  word-spacing: 10px;
+}
+
+a {
+  text-decoration: none;
+  /* text-decoration: underline; */
+  /* text-decoration: overline; */
+  /* text-decoration: line-through; */
+}

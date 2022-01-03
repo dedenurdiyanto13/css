@@ -1,0 +1,71 @@
+/* 
+#Font:
+- font-family
+- font-size
+- font-weight
+- font-variant
+- font-style
+- line-height
+
+#font-family:
+- nama font
+- generic family
+selector { property: value (nama font), value (nama font), value (generic family) }
+p { font-family: arial, verdana, sans-serif; }
+
+# sans-serif : font yang tidak punya kaki
+# serif : font yang memiliki kaki
+
+# font-size : 
+- px 
+- % 
+- em
+
+# font-weight : 
+- lighter 
+- normal 
+- 100-900 
+- bold
+- bolder
+
+# font-variant : 
+- normal (Hello World) 
+- smallcaps (HELLO WORLD : kapital semua huruf H dan W lebih besar ukurannya)
+
+# font-style : 
+- normal
+- italic : jika jenis font memiliki versi italic sehingga font ditukar jenis fontnya menjadi italic
+- oblique : jika jenis font tidak memiliki versi italic sehingga font dimiringkan sekian derajat
+
+# shorthand :
+- normal 
+body {
+    font-style: italic;
+    font-variant: normal;
+    font-wight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    font-family: helvetica, arial, sans-serif; 
+}
+- shorthand (berurutan sesuai dengan versi normal)
+body {
+    font: italic normal bold 16px/18px helvetica, arial, sans-serif;
+}
+- wajib / optional
+body {
+    font: optional optional optional wajib/optional wajib;
+}
+*/
+
+h1 {
+  font-style: italic;
+  font-variant: normal;
+  font-wight: bold;
+  font-size: 16px;
+  line-height: 18px;
+  font-family: helvetica, arial, sans-serif;
+}
+
+p {
+  font: italic normal bold 16px/18px helvetica, arial, sans-serif;
+}

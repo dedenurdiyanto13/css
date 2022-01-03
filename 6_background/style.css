@@ -1,0 +1,60 @@
+/* 
+Background : 
+- background-color : mengatur warna pada background
+- background-image : mengatur gambar yang akan digunakan pada background
+- background-position : mengatur posisi gambar pada backgriund
+- background-repeat : mengatur jenis pengulangan gambar pada background
+
+# subtlepatterns.com : website penyedia gambar pola
+
+# background-color : color name, color hex, color rgb
+
+# background-image : 
+- background-image : url(folder/file.png);
+- background-image : url(img/bg1.png)
+
+# background-repeat : 
+- repeat : diulangi
+- no-repeat : tidak diulangi
+- repeat-x : diulangi secara horizontal
+- repeat-y : diulangi secara vertical
+
+# backgriun-position : 
+- top / center / buttom atau left / center / right
+top left
+top center
+top right
+center left
+center center
+center right
+bottom left
+bottom center
+bottom right
+x% y%
+x-pos y-pos
+background-positin: top center;
+
+# shorthand :
+background: color url() position repeat;
+background: lightblue url(img/bg1.png) top center no-repeat 
+// tidak mempermasalahkan urutan
+*/
+
+body {
+  /* background-color: salmon; */
+  /* background-color: #fff890; */
+  /* background-color: rgb(60, 21, 45); */
+
+  /* background-image: url(img/bg1.png); */
+  /* background-image: url(img/bg2.png); */
+  /* background-image: url(img/logor.png); */
+
+  /* background-repeat: repeat; */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+
+  /* background-position: top center; */
+
+  background: #fff url(img/logor.png) top center no-repeat;
+}

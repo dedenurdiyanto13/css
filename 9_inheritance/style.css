@@ -1,0 +1,20 @@
+body {
+  /* 
+    Hasilnya :
+    <h1> : font Arial dan warna abu tua
+    <a> : font Arial dan warna tetap biru (tidak berubah)
+    <p> : font Arial dan warna abu tua
+
+    <a> tidak berubah warnanya menjadi abu tua karena <a> tidak mewarisi dari properti color
+    solusinya :
+    <a> diberi properti color dengan value inherit
+    contoh:
+    a { color: inherit }
+    */
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgray;
+}
+
+a {
+  color: inherit;
+}

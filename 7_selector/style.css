@@ -1,0 +1,45 @@
+/* 
+Selector : 
+- element HTML
+- id
+- class
+- complex selector
+
+# h1, h2 { color: red; } : koma "," disebut separator
+# ul li a { color: red; } : sepasi " " disebut separator
+*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: salmon;
+}
+
+h2 {
+  color: deeppink;
+}
+
+ul li a {
+  color: lightblue;
+}
+
+ol li a {
+  color: burlywood;
+}
+
+#p1 {
+  color: blueviolet;
+}
+
+.p2 {
+  color: cornflowerblue;
+}
+
+.miring {
+  font-style: italic;
+}
+
+p.miring {
+  text-decoration: line-through;
+}

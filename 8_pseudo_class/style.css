@@ -1,0 +1,70 @@
+/* -------------------Berkaitan dengan link------------ */
+.test:link {
+  color: green;
+}
+.test:hover {
+  color: lightblue;
+  font-size: 20px;
+}
+.test:active {
+  color: salmon;
+  font-style: italic;
+}
+/* .test:visited {
+  color: orange;
+} */
+
+/* ----------Berkaitan dengan elemen (child)------------- */
+/* element pertama */
+/* li:first-child a {
+  color: chartreuse;
+} */
+
+/* element terakhir */
+/* li:last-child a {
+  color: chartreuse;
+} */
+
+/* kelipatan 2 */
+/* li:nth-child(2n) a {
+  color: chartreuse;
+} */
+
+/* kelipatan 3 */
+/* li:nth-child(3n) a {
+  color: chartreuse;
+} */
+
+/* kelipatan 3 dimulai dari 1 */
+/* li:nth-child(3n-2) a {
+  color: chartreuse;
+} */
+
+/* kelipatan 3 dimulai dari 1 */
+/* li:nth-child(3n + 1) a {
+  color: chartreuse;
+} */
+
+/* genap */
+/* li:nth-child(even) a {
+  color: chartreuse;
+} */
+
+/* ganjil */
+li:nth-child(odd) a {
+  color: chartreuse;
+}
+
+/* hover tapi hanya yang ganjil saja */
+li:nth-child(odd) a:hover {
+  color: salmon;
+}
+
+/* --------------Berkaitan dengan element (yang bukan child)------------ */
+p:first-of-type {
+  color: blueviolet;
+}
+
+p:last-of-type {
+  color: lightskyblue;
+}

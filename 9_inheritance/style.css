@@ -1,6 +1,25 @@
 body {
   /* 
-    Hasilnya :
+    # inheritance (perarisan)
+    "sebuah element mewarisi beberapa nilai dari properti
+    yang dimiliki oleh elemnat parentnya"
+
+    # properti yang diwariskan :
+    - color
+    - font
+    - letter-spacing
+    - line-hight
+    - list-style
+    - text-align
+    - text-indent
+    - text-transform
+    - visibility
+    - white-space
+    */
+  font-family: Arial, Helvetica, sans-serif;
+  color: darkgray;
+  /* 
+  Hasilnya :
     <h1> : font Arial dan warna abu tua
     <a> : font Arial dan warna tetap biru (tidak berubah)
     <p> : font Arial dan warna abu tua
@@ -10,11 +29,10 @@ body {
     <a> diberi properti color dengan value inherit
     contoh:
     a { color: inherit }
-    */
-  font-family: Arial, Helvetica, sans-serif;
-  color: darkgray;
+  */
 }
 
 a {
   color: inherit;
 }
+/* a sekarang telah mengikuti parentnya (font arial dan warna abi tua) */

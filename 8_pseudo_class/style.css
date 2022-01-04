@@ -1,4 +1,17 @@
-/* -------------------Berkaitan dengan link------------ */
+/* 
+# pseudo-class 
+ciri : 
+1. diawali titik dua ":"
+2. diikuti dengan pseudo-classnya
+contoh :
+
+# pseudo-code yang berhubungan dengan LINK
+- :link : style default pada sebuah link (a yang memiliki href)
+- :hover : style ketika kursor mouse berada di atas sebuah link / element
+- :active : style ketika sebuah link diklik (keadaan aktif)
+- :visited : style ketika sebuah link sudah pernah dikunjungi (menggunakan browser yang sama)
+
+*/
 .test:link {
   color: green;
 }
@@ -14,7 +27,21 @@
   color: orange;
 } */
 
-/* ----------Berkaitan dengan elemen (child)------------- */
+/* 
+pseudo-class yang berhubungan dengan posisi element (child dari suatu parent)
+contoh :
+<ul>
+  <li></li>
+</ul>
+Ket :
+<li> adalah child dari <ul> dan <ul> adalah parent dari <li>
+
+- :first-child : memilih element pertama dari sebuah parent (element pembungkusnya)
+- :last-child : memilih element terakhir dari sebuah parent (element pembungkusnya)
+- :nth-child : memilih element ke-n dari sebuah parent (element pembungkusnya)
+               n nsia berarti urutan (1), (2), ... atau pola (2n), (3n+2), (4n-1), ...
+               atau ganjil (even) dan genap (odd)
+*/
 /* element pertama */
 /* li:first-child a {
   color: chartreuse;
@@ -60,7 +87,16 @@ li:nth-child(odd) a:hover {
   color: salmon;
 }
 
-/* --------------Berkaitan dengan element (yang bukan child)------------ */
+/* 
+pseudo-class yang berhubungan dengan posisi element (bukan child dari suatu parent)
+contoh :
+<p></p>
+Ket : 
+<p></p> adalah bukan child dari parent manapun
+
+- :first-of-type : memilih element pertama dari sebuah jenis / tipe tag
+- :last-of-type : memilih elemnent terakhir dari sebuah jenis / tipe tag
+*/
 p:first-of-type {
   color: blueviolet;
 }

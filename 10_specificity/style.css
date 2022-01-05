@@ -1,0 +1,70 @@
+/* 
+# Specificity :
+"setiap deklarasi CSS (selector) memiliki BERAT yang berbeda.
+Berat tersebut menentukan seberapa spesifik sebuah
+elemen dapat dipilih oleh selector"
+
+# https://specificity.keegan.st/ : web untuk menghitung spesificity
+
+Contoh 1:
+p {
+  color: red;
+}
+p {
+  color: green;
+}
+Ket :
+1. Selector sama sehingga selevel
+2. Yang akan dipilih adalah yang terakhir, yang pertama ditimpa
+3. Sehingga warna yang akan muncul adalah hijau
+
+# Contoh 2:
+p#merah {
+  color: red;
+}
+p {
+  color: green;
+}
+Ket :
+1. Selector pertama adalah id dan selector kedua adalah tag
+2. Yang akan dipilih adalah yang pertama yaitu id
+3. Sehingga warna yang akan muncul adalah merah karena id lebih spesifik ketimbang tag (p)
+
+# Menghitung spesificity
+Contoh 1:
+(#p1 vs p)
+        inline  id  class   element
+#p1     0       1   0       0       = 100
+p       0       0   0       1       = 1
+Pemenangnya adalah #p1 
+
+Contoh 2:
+ul#sarapan li {
+  color: salmon;
+}
+.favorit {
+  color: lightgreen;
+}
+(ul#sarapan li vs .favorit)
+                inline  id  class   element
+ul#sarapan li   0       1   0       2       = 102
+.favorit        0       0   1       0       = 10
+Pemenangnya adalah ul#sarapan li
+
+Tapi kita ingin nasi goreng warnanya merah, caranya:
+1. Buat dia lebih spesifik
+2. Buat dia memiliki bobot yang lebih berat
+Contoh 3:
+ul#sarapan li {
+  color: salmon;
+}
+ul#sarapan li.favorit {
+  color: lightgreen;
+}
+(ul#sarapan li vs ul#sarapan li.favorit)
+                              inline  id  class   element
+ul#sarapan li                  0       1   0       2       = 102
+ul#sarapan li.favorit          0       1   1       112     = 112
+Pemenangnya adalah ul#sarapan li.favorit
+Semuanya berwarna salmon kecuali nasi goreng berwarna hijau
+*/
